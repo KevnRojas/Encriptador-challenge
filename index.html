@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style-Encrip.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img class="Logo" src="imagenes/Logo.svg" alt="Logo de Alura">
+    </header>
+        <main>
+
+            <section class="Bloque-1">
+
+            <div class="contenedor-caja">
+                <textarea id="textoEncriptar" class="caja-texto" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+
+            <div class="alerta">
+                <img src="imagenes/Vector.jpg" alt="Alerta">
+                <p class="avisoAlerta"> Solo letras minusculas y sin acentos</p>
+            </div>
+
+            <div class="botones">
+                <button class="btn-Encriptar" type="button" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-Desencriptar" type="button" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+
+            </section>
+
+            <section class="Bloque-2">
+            
+            <div class="imagen-lupa">
+                <img src="imagenes/Muneco.png" alt="Muneco con Lupa">
+            </div>
+            
+            <div class="Parrafo-contenedor">
+                        <h1 class="titulo-encriptador">Ningún mensaje fue<br>encontrado</h1>
+                       <p1 class="parrafo">Ingresa el texto que desees encriptar o<br>desencriptar.</p1>
+                       <button class="btn-copiar" type="button" onclick="Copiar()">Copiar</button>
+            </div>
+
+            <div class="contenedor-resultado">
+                <textarea  id="contenedorResultado" class="texto-resultado"></textarea>
+            </div>
+
+            </section>
+            
+        </main>
+        
+        <footer class=" footer">
+            <img class="Gato-github" src="imagenes/Gato-github.png" alt="Gato-github">
+            <div class="footer-2">
+                <p class="copyright"> <span class="resaltar">&copy Desarrollado por Kevin Rojas Grupo 6 - ONE oracle - Alura Latam 2024</span></p>
+            </div>
+            
+            <a href="#">
+                <img src="imagenes/linkedin.svg" class="linked" alt="logo-Linkedin">
+            </a>
+        </footer>
+            
+    <script src="CodEncrip.js"></script>
+</body>
+</html>
